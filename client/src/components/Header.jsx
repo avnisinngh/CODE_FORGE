@@ -61,8 +61,12 @@ const Header = () => {
           <Link to="/contactus" className="hover:text-[#9d9e9e] transition duration-300">Contact Us</Link>
           <Link to="/features" className="hover:text-[#888a8b] transition duration-300">Features</Link>
           {user?.role === "NGO" && (
-            <Link to="/ngo-portal" className="hover:text-[#00d9ff] transition duration-300">NGO Portal</Link>
+            <Link to="/ngo-portal" className="hover:text-[#888a8b] transition duration-300">NGO Portal</Link>
           )}
+          {(user?.role === "Restaurant" || user?.role === "Individual") && (
+            <Link to="/request-portal" className="hover:text-[#888a8b] transition duration-300">Request Portal</Link>
+          )}
+
         </div>
 
         <div className="flex gap-4 hidden md:flex">

@@ -58,12 +58,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import Button from './ui/Button';
+import Button from './ui/button';
 import { FaDonate, FaHandsHelping, FaCookie } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
 
   const handleDonateNowClick = () => {
     navigate('/donate');

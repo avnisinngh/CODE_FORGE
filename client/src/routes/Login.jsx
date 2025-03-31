@@ -11,17 +11,20 @@ const Login = () => {
   const navigate = useNavigate();
 
   const login = async () => {
-    const data = { Email, password };
-    const response = await makeUnauthenticatedPOSTRequest("/auth/login", data);
+    const data = {Email, password};
+    const response = await makeUnauthenticatedPOSTRequest(
+        "/auth/login",
+        data
+    );
     if (response && !response.err) {
-      const token = response.token;
-      const date = new Date();
-      date.setDate(date.getDate() + 30);
-      setCookie("token", token, { path: "/", expires: date });
-      alert("Success");
-      navigate("/");
+        const token = response.token;
+        const date = new Date();
+        date.setDate(date.getDate() + 30);
+        setCookie("token", token, {path: "/", expires: date});
+        alert("Success");
+        navigate("/");
     } else {
-      alert("Failure");
+        alert("Failure");
     }
   };
 
