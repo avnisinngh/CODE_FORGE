@@ -1,73 +1,99 @@
 # NourishConnect
 
-*NourishConnect* is a platform designed to bridge the gap between food waste and hunger by connecting food donors with those in need. The platform allows restaurants, hotels, and individuals to donate surplus food to NGOs and individuals, ensuring that no food goes to waste and no one goes hungry.
+## Project Overview
+NourishConnect is a digital platform designed to combat food waste and hunger by connecting food donors with those in need. Every day, tons of food go to waste in restaurants, hotels, and events, while millions of people struggle with hunger. NourishConnect bridges this gap by facilitating seamless food donation and distribution.
 
-## Table of Contents
+### Problem It Solves:
+- **Food Waste Reduction:** Ensures surplus food is efficiently redistributed instead of discarded.
+- **Hunger Alleviation:** Helps NGOs and individuals access food in real-time.
+- **Seamless Connection:** Provides an easy-to-use platform for donors and recipients to interact.
 
-- [Introduction](#introduction)
-- [Problem Statement](#problem-statement)
-- [Our Solution](#our-solution)
-- [How It Works](#how-it-works)
-- [Features](#features)
-- [Impact](#impact)
-- [Testimonials](#testimonials)
-- [Call to Action](#call-to-action)
+### Key Features & Benefits:
+- **Easy Sign-Up** for Individuals, NGOs, and Restaurants
+- **Food Donation Tracking** to monitor donated items
+- **Real-Time Food Requests** for on-demand access
+- **Impact Reports & Statistics** to measure contributions
+- **Seamless Food Collection & Distribution** via NGO partnerships
 
-## Introduction
+## Dependencies
+To run NourishConnect, you need the following software and libraries:
 
-NourishConnect seeks to tackle two major global issues: food waste and hunger. Every day, tons of food are wasted at various establishments while millions of people are struggling with hunger. NourishConnect’s mission is to create a direct connection between those who have surplus food and those in need.
+- **Backend:** Node.js (v16.x), Express.js
+- **Frontend:** React.js, Tailwind CSS
+- **Database:** MongoDB (v5.x)
+- **Authentication:** JWT (JSON Web Token)
+- **Other Libraries:**
+  - axios (v0.27.x)
+  - dotenv (v16.x)
+  - mongoose (v6.x)
+  - nodemon (for development)
+  
+## Setup Instructions
 
-## Problem Statement
-A DIGITAL PLATFORM TO ELIMINATE FOOD WASTAGE AND HUNGER IN UNDERSERVED CIRCULATIONS
-### The Problem: Food Waste and Hunger
+### Prerequisites:
+- Install **Node.js** (v16.x or later) and **MongoDB** (v5.x or later)
+- Clone this repository:
+  ```bash
+  git clone https://github.com/priyanshu1804/CODE_FORGE.git
+  ```
 
-- "Every day, tons of food are wasted at restaurants, hotels, and events."
-- "Meanwhile, millions of people go hungry."
+### Backend Setup:
+1. Navigate to the backend folder:
+   ```bash
+   cd server
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file and configure environment variables:
+   ```plaintext
+   PORT=3000
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_secret_key
+   ```
+4. Start the backend server:
+   ```bash
+   npm start
+   ```
 
-This problem is exacerbated by the lack of systems that can connect those with surplus food to individuals or organizations in need.
+### Frontend Setup:
+1. Navigate to the frontend folder:
+   ```bash
+   cd client
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the frontend server:
+   ```bash
+   npm run dev
+   ```
 
-## Our Solution
-NourishConnect doesn’t just donate food—it transforms how food waste is managed!
-Tons of food go to waste daily while millions remain hungry. NourishConnect bridges this gap by seamlessly connecting food donors with those in need, reducing waste and fighting hunger efficiently.
+### Usage Guide:
+- **Donors** can sign up, list available surplus food, and track donations.
+- **NGOs/Individuals** can request food in real time and receive donations.
+- **Admins** can monitor impact reports and oversee transactions.
 
-### NourishConnect
+## Team Members
+- **[Avni Singh]** - Project Lead & Backend Developer
+- **[Priyanshu Kumar]** - Frontend Developer & Backend Developer
+- **[Radhey Verma]** -Frontend Developer & Backend Developer 
+- **[Jiya Singh]** -Frontend Developer & UI/UX Designer
+## License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
 
-NourishConnect provides a simple, effective platform where food donors—be it restaurants, hotels, or individuals—can donate their surplus food. The platform ensures that donated food is collected and distributed to those in need through partnerships with NGOs and other charitable organizations.
+## Contribution Guidelines
+We welcome contributions! Follow these steps:
+1. Fork the repository.
+2. Create a new branch (`feature-branch`).
+3. Commit your changes.
+4. Push the branch and submit a Pull Request.
 
-## How It Works
+## Future Plans
+- Implement AI-driven food demand prediction.
+- Introduce a mobile app for seamless access.
+- Expand to more regions to enhance food security globally.
 
-1. *Sign Up*: Donors and recipients (NGOs and individuals) sign up on the platform.
-2. *Donate or Request Food*: Donors offer surplus food, and recipients make requests for food.
-3. *Food Collection and Distribution*: Once food is donated, it’s collected and distributed to the recipients.
-4. *Impact*: Every donation ensures that hungry individuals are fed, reducing food waste.
-
-## Features
-
-- *Easy Sign-Up* for Individuals, NGOs, and Restaurants
-- *Food Donation Tracking* to track donated items
-- *Real-Time Food Requests* so that recipients can request food on-demand
-- *Impact Reports and Statistics* to track how many meals have been donated and people fed
-
-## Impact
-
-### Our Impact
-
-- *X Meals Donated*
-- *Y People Fed*
-- *Z Partners Involved*
-
-The platform has already made a significant impact by facilitating donations, providing real-time tracking, and bringing people together to solve food insecurity.
-
-## Testimonials
-
-### What People Are Saying
-
-- "NourishConnect has made it so easy for us to donate surplus food and make a real difference." 
-- "Thanks to NourishConnect, we were able to feed hundreds of people who otherwise would have gone hungry."
-
-## Call to Action
-
-### Join Us in Making a Difference
-
-- *Sign Up Today to Donate or Request Food*
-- *Together, We Can End Hunger*
+Join us in making a difference! 🚀
